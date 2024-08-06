@@ -56,6 +56,7 @@ export default function User() {
                   <Input id="email" placeholder="Email" type="email" />
                 </div>
                 <div className="space-y-2">
+                    <Label htmlFor="dob">Date of Birth</Label>
                 <Input type="date" id="appointment-date" className="w-full" value={dob} onChange={(e) => {setDob(e.target.value)}} />
 
                 </div>
