@@ -1,9 +1,7 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import User from './components/user';
-import Appointment from './components/appointment';
-import Confirmation from './components/confirmation';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Home from './components/home';
 
 const App = () => {
   return (
@@ -12,9 +10,8 @@ const App = () => {
 
         <div >
           <Routes>
-            <Route path="/" element={<User />} />
-            <Route path="/appointment" element={<Appointment />} />
-            <Route path="/success" element={<Confirmation />} />
+            <Route path="/" element={<Home />} />
+          
           </Routes>
         </div>
     </Router>
